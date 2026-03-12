@@ -1,0 +1,1061 @@
+<gui>
+  <properties>
+    <project>台灣默克-K01餐廳iPad</project>
+    <designer>susu</designer>
+    <size>
+      <portrait width="50" height="50" />
+      <landscape width="1180" height="820" />
+    </size>
+    <imagefolder>
+    </imagefolder>
+    <debug loaderrors="0" connectionerrors="0" />
+    <devices>
+      <device name="1eb34a27-6f35-4c8f-9a56-fb5e1bbd1df8">94CB09A76C8F70C8EF93EB3100D9ACDD56AEA7E945050C3FAA4FAC2AAC7C9FDA</device>
+      <device name="4e2796e4-71f3-468b-b171-6ad1330f87fe">94CB09A76C8F70C8EF93EB3100D9ACDD7D78DE95622A159B2746715C0BCD88FD</device>
+      <device name="08fffb64-5204-4364-80c7-a6566cd8ec16">30A6D4B62C890BE2BEF652CE1FDBEBDB</device>
+    </devices>
+  </properties>
+  <systems>
+    <system name="send24CS" ip="192.168.0.253" origin="1234" port="6001" protocol="udp" alwayson="1" offlinequeue="0" accept="0" acceptBroadcasts="0" ssl="0" maxconnections="0" heartbeatRx="" heartbeatTx="" heartbeatMode="-1" eom="" connectionStatus="0" disconnectionStatus="0" />
+    <system name="sendipad" ip="192.168.0.70" port="1234" protocol="udp" alwayson="1" offlinequeue="0" accept="0" acceptBroadcasts="0" ssl="0" maxconnections="0" heartbeatRx="" heartbeatTx="" heartbeatMode="-1" eom="" connectionStatus="0" disconnectionStatus="0">
+      <cmd name="綠燈">'wifi'</cmd>
+    </system>
+    <system name="sendDNC4000" ip="192.168.0.150" origin="1234" port="8092" protocol="tcp" alwayson="1" offlinequeue="0" accept="0" acceptBroadcasts="0" ssl="0" maxconnections="0" heartbeatRx="" heartbeatTx="" heartbeatMode="-1" eom="" connectionStatus="0" disconnectionStatus="0" />
+    <system name="sendREL8" ip="192.168.0.160" origin="1234" port="4800" protocol="tcp" alwayson="1" offlinequeue="0" accept="0" acceptBroadcasts="0" ssl="0" maxconnections="0" heartbeatRx="" heartbeatTx="" heartbeatMode="-1" eom="" connectionStatus="0" disconnectionStatus="0" />
+    <system name="sendP300" ip="192.168.0.50" origin="1234" port="2202" protocol="tcp" alwayson="1" offlinequeue="0" accept="0" acceptBroadcasts="0" ssl="0" maxconnections="0" heartbeatRx="" heartbeatTx="" heartbeatMode="-1" eom="" connectionStatus="0" disconnectionStatus="0" />
+    <system name="sendG62" ip="192.168.0.100" origin="1234" port="3301" protocol="udp" alwayson="1" offlinequeue="0" accept="0" acceptBroadcasts="0" ssl="0" maxconnections="0" heartbeatRx="" heartbeatTx="" heartbeatMode="-1" eom="" connectionStatus="0" disconnectionStatus="0" />
+    <system name="sendandroid" ip="192.168.0.80" origin="5678" port="1234" protocol="udp" alwayson="1" offlinequeue="0" accept="0" acceptBroadcasts="0" ssl="0" maxconnections="0" heartbeatRx="" heartbeatTx="" heartbeatMode="-1" eom="" connectionStatus="0" disconnectionStatus="0" />
+    <system name="sendE60" ip="192.168.0.105" origin="10210" port="1259" protocol="udp" alwayson="1" offlinequeue="0" accept="0" acceptBroadcasts="0" ssl="0" maxconnections="0" heartbeatRx="" heartbeatTx="'$81,$01,$04,$00,$02,$FF'" heartbeatMode="1" eom="" connectionStatus="0" disconnectionStatus="0">
+      <cmd name="on">$81,$01,$04,$00,$02,$FF</cmd>
+    </system>
+  </systems>
+  <sounds>
+    <sound name="new_sound" j="0" loop="0" releasestop="0">music\b_067_.mp3</sound>
+  </sounds>
+  <themes>
+    <theme type="background" name=".001_Home"><![CDATA[ background-image: url(Page\001_Home.png); background-repeat: no-repeat;]]></theme>
+    <theme type="background" name=".001_1_Warning"><![CDATA[ background-image: url(Page\001_1_Warning.png); background-repeat: no-repeat;]]></theme>
+    <theme type="background" name=".002_Confirm_ON"><![CDATA[ background-image: url(Page\002_Confirm_ON.png); background-repeat: no-repeat;]]></theme>
+    <theme type="background" name=".002_Confirm_OFF"><![CDATA[ background-image: url(Page\002_Confirm_OFF.png); background-repeat: no-repeat;]]></theme>
+    <theme type="background" name=".003_Waiting"><![CDATA[ background-image: url(Page\003_Waiting.png); background-repeat: no-repeat;]]></theme>
+    <theme type="background" name=".004_Projector"><![CDATA[ background-image: url(Page\004_Projector.png); background-repeat: no-repeat;]]></theme>
+    <theme type="background" name=".005_Camera"><![CDATA[ background-image: url(Page\005_Camera.png); background-repeat: no-repeat;]]></theme>
+    <theme type="background" name=".006_Meeting"><![CDATA[ background-image: url(Page\006_Meeting.png); background-repeat: no-repeat;]]></theme>
+    <theme type="background" name=".007_Volume"><![CDATA[ background-image: url(Page\007_Volume.png); background-repeat: no-repeat;]]></theme>
+    <theme type="button" name=".001_SYS_ON[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(001_Home\SYS-ON.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".001_SYS_ON[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(001_Home\SYS-ON_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".001_SYS_OFF[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(001_Home\SYS-OFF.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".001_SYS_OFF[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(001_Home\SYS-OFF_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".001_Connecting[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(001_Home\Connecting.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".001_Connecting[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(001_Home\Connecting.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".001_Connected[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(001_Home\Connected.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".001_Connected[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(001_Home\Connected.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".001_Not_connected[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(001_Home\Not-connected.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".001_Not_connected[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(001_Home\Not-connected.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".001_Reconnect[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(001_Home\Reconnect.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".001_Reconnect[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(001_Home\Reconnect_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="text" name=".001_Name"><![CDATA[ color: #FFC732; font-size: 26px; font-family: 'Noto Sans CJK TC Medium'; text-align: center; vertical-align: middle; font-weight: bold; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="button" name=".002_Cancle[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(002_Confirm\Cancle.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".002_Cancle[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(002_Confirm\Cancle_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".002_check_ON[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(002_Confirm\check-ON.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".002_check_ON[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(002_Confirm\check-ON_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".002_check_OFF[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(002_Confirm\check-OFF.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".002_check_OFF[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(002_Confirm\check-OFF_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="text" name=".003_Time"><![CDATA[ color: #51EDA9; font-size: 36px; font-family: 'Noto Sans CJK TC Medium'; text-align: center; vertical-align: middle; font-weight: bold; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="button" name=".004_Home[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Home.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_Home[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Home_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Monitor[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Monitor.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Monitor[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Monitor_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Monitor_copy[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Monitor_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Monitor_copy[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Monitor_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Camera[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Camera.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Camera[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Camera_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Camera_copy[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Camera_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Camera_copy[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Camera_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Meeting[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Meeting.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Meeting[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Meeting_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Meeting_copy[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Meeting_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Meeting_copy[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Meeting_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Volume[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Volume.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Volume[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Volume_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Volume_copy[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Volume_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Volume_copy[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Volume_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_ON[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\ON.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_ON[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\ON_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_OFF[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\OFF.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_OFF[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\OFF_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_Cover[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Cover.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_Cover[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Cover_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_Recover[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Recover.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_Recover[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Recover_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_UP[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\UP.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_UP[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\UP_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_DOWN[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\DOWN.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_DOWN[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\DOWN_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_NB[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\NB.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_NB[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\NB_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_PPT[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\PPT.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_PPT[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\PPT_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_Video[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Video.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_Video[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Video_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_Sub[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Sub.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_Sub[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Sub.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_zoom_IN[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\zoom-IN.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_zoom_IN[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\zoom-IN_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_zoom_OUT[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\zoom-OUT.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_zoom_OUT[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\zoom-OUT_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_Track_ON[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\ON.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_Track_ON[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\ON_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_Track_OFF[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\OFF.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_Track_OFF[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\OFF_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_Store[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\Store.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_Store[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\Store_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_UP[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\UP.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_UP[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\UP_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_DOWN[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\DOWN.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_DOWN[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\DOWN_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_LEFT[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\LEFT.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_LEFT[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\LEFT_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_RIGHT[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\RIGHT.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_RIGHT[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\RIGHT_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_P1[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\P1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_P1[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\P1_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_P2[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\P2.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_P2[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\P2_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_P3[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\P3.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_P3[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\P3_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_P4[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\P4.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".005_P4[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(005_Camera\P4_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Confirm[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Confirm.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Confirm[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Confirm_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Delete[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Delete.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Delete[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Delete_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Louder[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Louder.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Louder[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Louder_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Quieter[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Quieter.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Quieter[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Quieter_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Mute[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Mute.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Mute[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Mute_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_End[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\End.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_End[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\End_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Call[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Call.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Call[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Call_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Return[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Return.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Return[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Return_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Main[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Home.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Main[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Home_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Menu[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Menu.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Menu[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Menu_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_1[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_1[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\1_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_0[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\0.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_0[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\0_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Well[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Well.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Well[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Well_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Dot[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Dot.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Dot[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Dot_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_2[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\2.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_2[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\2_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_3[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\3.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_3[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\3_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_4[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\4.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_4[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\4_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_5[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\5.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_5[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\5_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_6[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\6.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_6[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\6_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_7[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\7.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_7[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\7_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_8[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\8.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_8[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\8_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_9[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\9.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_9[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\9_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".007_Mute[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(007_Volume\Mute.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".007_Mute[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(007_Volume\Mute_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".007_Voice[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(007_Volume\Voice.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".007_Voice[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(007_Volume\Voice_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="gauge" name=".newtheme_1[state='0']"><![CDATA[]]></theme>
+    <theme type="gauge" name=".newtheme_1[state='1']"><![CDATA[]]></theme>
+    <theme type="text" name=".008_Vol"><![CDATA[ color: #43209B; font-size: 22px; font-family: 'Noto Sans CJK TC Medium'; text-align: center; vertical-align: middle; font-weight: bold; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="background" name=".006_1_Video_Cam"><![CDATA[ background-image: url(Page\006_1_Video_Cam.png); background-repeat: no-repeat;]]></theme>
+    <theme type="button" name=".004_m_Projector[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Projector.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Projector[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Projector_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Projector_copy[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Projector_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_m_Projector_copy[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Projector_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_INFO_1[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\INFO-1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_INFO_1[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\INFO-1_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_INFO_2[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\INFO-2.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_INFO_2[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\INFO-2_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_Wireless[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Wireless.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_Wireless[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Wireless_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_Page_DOWN[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Page-DOWN.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_Page_DOWN[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Page-DOWN_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_Page_UP[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Page-UP.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_Page_UP[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Page-UP_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="background" name=".004_Projector_2"><![CDATA[ background-image: url(Page\004_Projector.png); background-repeat: no-repeat;]]></theme>
+    <theme type="button" name=".004_Cam[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Cam.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".004_Cam[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(004_Monitor\Cam_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Video_Cam[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Video-Cam.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Video_Cam[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Video-Cam_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Back[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Back.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".006_Back[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(006_Meeting\Back_1.png); color: White; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+  </themes>
+  <scripts>
+    <script name="默克_K01餐廳_ipad.lua" />
+  </scripts>
+  <page name="001_Home" j="0" transition="" subtype="" time="0" ease="">
+    <portrait />
+    <landscape t="001_Home">
+      <timer j="123" interval="5000">
+        <command>綠燈</command>
+      </timer>
+      <btn j="1" x="370" y="435" w="278" h="139" t="001_SYS_ON" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="88" y="436" w="275" h="136" t="001_SYS_OFF" flip="002_Confirm_OFF" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <subpage name="001_Connecting" x="917" y="18" j="0" transition1="" subtype1="" time1="0" ease1="" transition2="" subtype2="" time2="0" ease2="" clickthrough="0" topmost="0" v="1" l="1" />
+      <subpage name="001_Connected" x="917" y="18" j="1234" transition1="None" subtype1="None" time1="0" ease1="" transition2="None" subtype2="None" time2="0" ease2="" clickthrough="0" topmost="0" v="0" l="1" />
+      <subpage name="001_Not_connected" x="917" y="18" j="5678" transition1="None" subtype1="None" time1="0" ease1="" transition2="None" subtype2="None" time2="0" ease2="" clickthrough="0" topmost="0" v="0" l="1" />
+    </landscape>
+  </page>
+  <page name="001_1_Warning" j="888" transition="None" subtype="None" time="0" ease="">
+    <portrait />
+    <landscape t="001_1_Warning">
+      <btn j="888" x="456" y="419" w="268" h="102" t="001_Reconnect" flip="001_Home" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <txt j="0" x="629" y="330" w="246" h="36" t="001_Name" wrap="False" l="1">HUSION</txt>
+    </landscape>
+  </page>
+  <page name="002_Confirm_ON" j="1150" transition="None" subtype="None" time="0" ease="">
+    <portrait />
+    <landscape t="002_Confirm_ON">
+      <btn j="0" x="330" y="422" w="208" h="102" t="002_Cancle" flip="001_Home" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="10" x="582" y="422" w="268" h="102" t="002_check_ON" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+    </landscape>
+  </page>
+  <page name="003_Waiting" j="1100" transition="None" subtype="None" time="0" ease="">
+    <portrait />
+    <landscape t="003_Waiting">
+      <txt j="50" x="672" y="410" w="90" h="44" t="003_Time" wrap="False" l="1">
+      </txt>
+    </landscape>
+  </page>
+  <page name="004_Projector" j="1200" transition="None" subtype="None" time="0" ease="" start="1">
+    <portrait />
+    <landscape t="004_Projector">
+      <btn j="0" x="1060" y="10" w="96" h="98" t="004_Home" flip="001_Home" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="30" y="97" w="178" h="81" t="004_m_Projector_copy" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="216" y="97" w="178" h="81" t="004_m_Camera" flip="005_Camera" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="402" y="97" w="190" h="81" t="004_m_Meeting" flip="006_Meeting" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="600" y="97" w="172" h="81" t="004_m_Volume" flip="007_Volume" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="10001" x="234" y="307" w="114" h="114" t="004_ON" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="10002" x="110" y="307" w="114" h="114" t="004_OFF" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="10003" x="471" y="307" w="114" h="114" t="004_Cover" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="10004" x="595" y="307" w="114" h="114" t="004_Recover" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="101" x="117" y="472" w="224" h="64" t="004_INFO_1" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="102" x="478" y="472" w="224" h="64" t="004_INFO_2" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="103" x="839" y="472" w="224" h="64" t="004_Wireless" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <subpage name="004_Sub" x="60" y="543" j="0" transition1="" subtype1="" time1="0" ease1="" transition2="" subtype2="" time2="0" ease2="" clickthrough="0" topmost="0" v="1" l="1" />
+      <btn j="10006" x="956" y="307" w="114" h="114" t="004_DOWN" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="10005" x="832" y="307" w="114" h="114" t="004_UP" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="1071" y="430" w="74" h="74" t="004_Page_DOWN" flip="004_Projector_2" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+    </landscape>
+  </page>
+  <page name="005_Camera" j="0" transition="" subtype="" time="0" ease="">
+    <portrait />
+    <landscape t="005_Camera">
+      <btn j="0" x="1060" y="10" w="96" h="98" t="004_Home" flip="001_Home" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="30" y="97" w="178" h="81" t="004_m_Projector" flip="004_Projector" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="216" y="97" w="178" h="81" t="004_m_Camera_copy" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="402" y="97" w="190" h="81" t="004_m_Meeting" flip="006_Meeting" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="600" y="97" w="172" h="81" t="004_m_Volume" flip="007_Volume" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <video x="100" y="307" w="495" h="277" j="0" play="0" stop="0" url="rtsp://192.168.100.6:554/live/chn2_sub" bgcolor="" format="h264" auth_user="" auth_password="" auth_realm="" auth_host="" auth_method="" auth_proxy="" autoplay="1" cache="1" />
+      <btn j="2011" x="995" y="361" w="130" h="117" t="005_zoom_IN" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="2012" x="995" y="478" w="130" h="115" t="005_zoom_OUT" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="2001" x="717" y="329" w="209" h="110" t="005_UP" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="2002" x="711" y="519" w="220" h="112" t="005_DOWN" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="2003" x="670" y="370" w="117" h="217" t="005_LEFT" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="2004" x="858" y="373" w="117" h="212" t="005_RIGHT" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="3001" x="65" y="661" w="142" h="78" t="005_P1" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="3002" x="208" y="661" w="142" h="78" t="005_P2" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="3003" x="351" y="661" w="142" h="78" t="005_P3" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="3004" x="494" y="661" w="142" h="78" t="005_P4" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="3000" x="764" y="423" w="114" h="112" t="005_Store" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+    </landscape>
+  </page>
+  <page name="006_Meeting" j="0" transition="" subtype="" time="0" ease="">
+    <portrait />
+    <landscape t="006_Meeting">
+      <btn j="0" x="1060" y="10" w="96" h="98" t="004_Home" flip="001_Home" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="30" y="97" w="178" h="81" t="004_m_Projector" flip="004_Projector" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="216" y="97" w="178" h="81" t="004_m_Camera" flip="005_Camera" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="402" y="97" w="190" h="81" t="004_m_Meeting_copy" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="600" y="97" w="172" h="81" t="004_m_Volume" flip="007_Volume" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="318" x="694" y="339" w="209" h="110" t="005_UP" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="319" x="688" y="529" w="220" h="112" t="005_DOWN" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="320" x="647" y="380" w="117" h="217" t="005_LEFT" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="321" x="835" y="383" w="117" h="212" t="005_RIGHT" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="322" x="739" y="427" w="118" h="122" t="006_Confirm" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="312" x="577" y="588" w="84" h="84" t="006_Delete" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="323" x="975" y="309" w="130" h="117" t="006_Louder" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="324" x="975" y="426" w="130" h="115" t="006_Quieter" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="325" x="975" y="531" w="130" h="130" t="006_Mute" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="314" x="225" y="298" w="171" h="84" t="006_End" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="313" x="396" y="298" w="171" h="84" t="006_Call" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="317" x="75" y="314" w="130" h="120" t="006_Return" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="315" x="75" y="429" w="130" h="117" t="006_Main" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="316" x="75" y="546" w="130" h="115" t="006_Menu" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="301" x="225" y="384" w="118" h="79" t="006_1" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="300" x="343" y="595" w="106" h="78" t="006_0" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="311" x="449" y="595" w="118" h="78" t="006_Well" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="310" x="225" y="595" w="118" h="78" t="006_Dot" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="302" x="343" y="384" w="106" h="79" t="006_2" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="303" x="449" y="384" w="118" h="79" t="006_3" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="304" x="225" y="463" w="118" h="66" t="006_4" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="305" x="343" y="463" w="106" h="66" t="006_5" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="306" x="449" y="463" w="118" h="66" t="006_6" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="307" x="225" y="529" w="118" h="66" t="006_7" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="308" x="343" y="529" w="106" h="66" t="006_8" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="309" x="449" y="529" w="118" h="66" t="006_9" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="326" x="577" y="298" w="104" h="104" t="006_Video_Cam" flip="006_1_Video_Cam" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+    </landscape>
+  </page>
+  <page name="007_Volume" j="0" transition="" subtype="" time="0" ease="">
+    <portrait />
+    <landscape t="007_Volume">
+      <btn j="0" x="1060" y="10" w="96" h="98" t="004_Home" flip="001_Home" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="30" y="97" w="178" h="81" t="004_m_Projector" flip="004_Projector" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="216" y="97" w="178" h="81" t="004_m_Camera" flip="005_Camera" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="402" y="97" w="190" h="81" t="004_m_Meeting" flip="006_Meeting" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="600" y="97" w="172" h="81" t="004_m_Volume_copy" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="501" x="73" y="600" w="82" h="80" t="007_Mute" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="502" x="155" y="600" w="82" h="80" t="007_Voice" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <slider j="30000" d="0" x="148" y="379" w="40" h="198" min="0" max="100" decimals="0" unit="decimal" t="newtheme_1" sim="1" l="1">
+        <indicator state="0" offsetX="0" offsetY="0" x="0" y="0" w="0" h="0" t="">007_Volume\bt_1.png</indicator>
+        <indicator state="1" offsetX="0" offsetY="0" x="0" y="0" w="0" h="0" t="">007_Volume\bt_1.png</indicator>
+      </slider>
+      <txt j="30000" x="151" y="328" w="68" h="28" t="008_Vol" wrap="False" l="1">
+      </txt>
+      <btn j="503" x="247" y="600" w="82" h="80" t="007_Mute" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="504" x="329" y="600" w="82" h="80" t="007_Voice" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <slider j="31000" d="0" x="322" y="379" w="40" h="198" min="0" max="100" decimals="0" unit="decimal" t="newtheme_1" sim="1" l="1">
+        <indicator state="0" offsetX="0" offsetY="0" x="0" y="0" w="0" h="0" t="">007_Volume\bt_1.png</indicator>
+        <indicator state="1" offsetX="0" offsetY="0" x="0" y="0" w="0" h="0" t="">007_Volume\bt_1.png</indicator>
+      </slider>
+      <txt j="31000" x="325" y="328" w="68" h="28" t="008_Vol" wrap="False" l="1">
+      </txt>
+      <btn j="505" x="421" y="600" w="82" h="80" t="007_Mute" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="506" x="503" y="600" w="82" h="80" t="007_Voice" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <slider j="32000" d="0" x="496" y="379" w="40" h="198" min="0" max="100" decimals="0" unit="decimal" t="newtheme_1" sim="1" l="1">
+        <indicator state="0" offsetX="0" offsetY="0" x="0" y="0" w="0" h="0" t="">007_Volume\bt_1.png</indicator>
+        <indicator state="1" offsetX="0" offsetY="0" x="0" y="0" w="0" h="0" t="">007_Volume\bt_1.png</indicator>
+      </slider>
+      <txt j="32000" x="499" y="328" w="68" h="28" t="008_Vol" wrap="False" l="1">
+      </txt>
+      <btn j="507" x="595" y="600" w="82" h="80" t="007_Mute" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="508" x="677" y="600" w="82" h="80" t="007_Voice" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <slider j="33000" d="0" x="670" y="379" w="40" h="198" min="0" max="100" decimals="0" unit="decimal" t="newtheme_1" sim="1" l="1">
+        <indicator state="0" offsetX="0" offsetY="0" x="0" y="0" w="0" h="0" t="">007_Volume\bt_1.png</indicator>
+        <indicator state="1" offsetX="0" offsetY="0" x="0" y="0" w="0" h="0" t="">007_Volume\bt_1.png</indicator>
+      </slider>
+      <txt j="33000" x="673" y="328" w="68" h="28" t="008_Vol" wrap="False" l="1">
+      </txt>
+      <btn j="509" x="769" y="600" w="82" h="80" t="007_Mute" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="510" x="851" y="600" w="82" h="80" t="007_Voice" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <slider j="34000" d="0" x="844" y="379" w="40" h="198" min="0" max="100" decimals="0" unit="decimal" t="newtheme_1" sim="1" l="1">
+        <indicator state="0" offsetX="0" offsetY="0" x="0" y="0" w="0" h="0" t="">007_Volume\bt_1.png</indicator>
+        <indicator state="1" offsetX="0" offsetY="0" x="0" y="0" w="0" h="0" t="">007_Volume\bt_1.png</indicator>
+      </slider>
+      <txt j="34000" x="847" y="328" w="68" h="28" t="008_Vol" wrap="False" l="1">
+      </txt>
+      <btn j="511" x="943" y="600" w="82" h="80" t="007_Mute" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="512" x="1025" y="600" w="82" h="80" t="007_Voice" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <slider j="35000" d="0" x="1018" y="379" w="40" h="198" min="0" max="100" decimals="0" unit="decimal" t="newtheme_1" sim="1" l="1">
+        <indicator state="0" offsetX="0" offsetY="0" x="0" y="0" w="0" h="0" t="">007_Volume\bt_1.png</indicator>
+        <indicator state="1" offsetX="0" offsetY="0" x="0" y="0" w="0" h="0" t="">007_Volume\bt_1.png</indicator>
+      </slider>
+      <txt j="35000" x="1021" y="328" w="68" h="28" t="008_Vol" wrap="False" l="1">
+      </txt>
+    </landscape>
+  </page>
+  <page name="002_Confirm_OFF" j="0" transition="None" subtype="None" time="0" ease="">
+    <portrait />
+    <landscape t="002_Confirm_OFF">
+      <btn j="0" x="330" y="422" w="208" h="102" t="002_Cancle" flip="001_Home" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="20" x="582" y="422" w="268" h="102" t="002_check_OFF" flip="001_Home" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+    </landscape>
+  </page>
+  <page name="004_Projector_2" j="0" transition="None" subtype="None" time="0" ease="">
+    <portrait />
+    <landscape t="004_Projector_2">
+      <btn j="0" x="1060" y="10" w="96" h="98" t="004_Home" flip="001_Home" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="30" y="97" w="178" h="81" t="004_m_Projector_copy" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="216" y="97" w="178" h="81" t="004_m_Camera" flip="005_Camera" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="402" y="97" w="190" h="81" t="004_m_Meeting" flip="006_Meeting" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="600" y="97" w="172" h="81" t="004_m_Volume" flip="007_Volume" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="10011" x="234" y="307" w="114" h="114" t="004_ON" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="10012" x="110" y="307" w="114" h="114" t="004_OFF" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="10013" x="471" y="307" w="114" h="114" t="004_Cover" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="10014" x="595" y="307" w="114" h="114" t="004_Recover" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="106" x="839" y="472" w="224" h="64" t="004_Cam" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="105" x="478" y="472" w="224" h="64" t="004_PPT" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="104" x="117" y="472" w="224" h="64" t="004_Video" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="10016" x="956" y="307" w="114" h="114" t="004_DOWN" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="10015" x="832" y="307" w="114" h="114" t="004_UP" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="35" y="430" w="74" h="74" t="004_Page_UP" flip="004_Projector" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <video x="90" y="568" w="279" h="156" j="0" play="0" stop="0" url="rtsp://192.168.100.5:554/live/chn2_sub" bgcolor="" format="" auth_user="" auth_password="" auth_realm="" auth_host="" auth_method="" auth_proxy="" />
+      <video x="451" y="568" w="279" h="156" j="0" play="0" stop="0" url="rtsp://192.168.100.4:554/live/chn2_sub" bgcolor="" format="" auth_user="" auth_password="" auth_realm="" auth_host="" auth_method="" auth_proxy="" />
+      <video x="812" y="568" w="279" h="156" j="0" play="0" stop="0" url="rtsp://192.168.100.6:554/live/chn2_sub" bgcolor="" format="" auth_user="" auth_password="" auth_realm="" auth_host="" auth_method="" auth_proxy="" />
+    </landscape>
+  </page>
+  <page name="006_1_Video_Cam" j="0" transition="None" subtype="None" time="0" ease="">
+    <portrait />
+    <landscape t="006_1_Video_Cam">
+      <btn j="0" x="1060" y="10" w="96" h="98" t="004_Home" flip="001_Home" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="30" y="97" w="178" h="81" t="004_m_Projector" flip="004_Projector" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="216" y="97" w="178" h="81" t="004_m_Camera" flip="005_Camera" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="402" y="97" w="190" h="81" t="004_m_Meeting_copy" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="600" y="97" w="172" h="81" t="004_m_Volume" flip="007_Volume" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <video x="100" y="307" w="495" h="277" j="0" play="0" stop="0" url="rtsp://192.168.100.5:554/live/chn2_sub" bgcolor="" format="" auth_user="" auth_password="" auth_realm="" auth_host="" auth_method="" auth_proxy="" />
+      <btn j="4005" x="995" y="361" w="130" h="117" t="005_zoom_IN" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="4006" x="995" y="478" w="130" h="115" t="005_zoom_OUT" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="4001" x="717" y="329" w="209" h="110" t="005_UP" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="4002" x="711" y="519" w="220" h="112" t="005_DOWN" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="4003" x="670" y="370" w="117" h="217" t="005_LEFT" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="4004" x="858" y="373" w="117" h="212" t="005_RIGHT" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="5001" x="65" y="661" w="142" h="78" t="005_P1" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="5002" x="208" y="661" w="142" h="78" t="005_P2" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="5003" x="351" y="661" w="142" h="78" t="005_P3" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="5004" x="494" y="661" w="142" h="78" t="005_P4" flip="None" sim="0" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="5000" x="764" y="423" w="114" h="112" t="005_Store" flip="None" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+      <btn j="0" x="1039" y="205" w="96" h="96" t="006_Back" flip="006_Meeting" sim="1" l="1" s="1">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+    </landscape>
+  </page>
+  <subpage name="001_Connecting" w="246" h="49" clip="1">
+    <btn j="0" x="0" y="0" w="246" h="49" t="001_Connecting" flip="None" sim="0" l="1" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+  </subpage>
+  <subpage name="001_Connected" w="246" h="49" clip="1">
+    <btn j="0" x="0" y="0" w="246" h="49" t="001_Connected" flip="None" sim="0" l="1" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+  </subpage>
+  <subpage name="001_Not_connected" w="246" h="49" clip="1">
+    <btn j="0" x="0" y="0" w="246" h="49" t="001_Not_connected" flip="None" sim="0" l="1" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+  </subpage>
+  <subpage name="004_Sub" w="1060" h="203" clip="1">
+    <btn j="0" x="0" y="0" w="1060" h="203" t="004_Sub" flip="None" sim="0" l="1" s="1">
+      <inactive s="0">
+      </inactive>
+      <active s="0">
+      </active>
+    </btn>
+    <video x="30" y="25" w="279" h="156" j="0" play="0" stop="0" url="rtsp://192.168.100.1:554/live/chn2_sub" bgcolor="" format="" auth_user="" auth_password="" auth_realm="" auth_host="" auth_method="" auth_proxy="" />
+    <video x="391" y="25" w="279" h="156" j="0" play="0" stop="0" url="rtsp://192.168.100.2:554/live/chn2_sub" bgcolor="" format="" auth_user="" auth_password="" auth_realm="" auth_host="" auth_method="" auth_proxy="" />
+    <video x="752" y="25" w="279" h="156" j="0" play="0" stop="0" url="rtsp://192.168.100.3:554/live/chn2_sub" bgcolor="" format="" auth_user="" auth_password="" auth_realm="" auth_host="" auth_method="" auth_proxy="" />
+  </subpage>
+</gui>
